@@ -1,0 +1,48 @@
+; CLW file contains information for the MFC ClassWizard
+
+[General Info]
+Version=1
+LastClass=CSampleParserDlg
+LastTemplate=CDialog
+NewFileInclude1=#include "stdafx.h"
+NewFileInclude2=#include "SampleParser.h"
+
+ClassCount=2
+Class1=CSampleParserApp
+Class2=CSampleParserDlg
+
+ResourceCount=4
+Resource2=IDR_MAINFRAME
+Resource3=IDD_SAMPLEPARSER_DIALOG
+Resource4=IDD_SAMPLEPARSER_DIALOG (English (U.S.))
+
+[CLS:CSampleParserApp]
+Type=0
+HeaderFile=SampleParser.h
+ImplementationFile=SampleParser.cpp
+Filter=N
+
+[CLS:CSampleParserDlg]
+Type=0
+HeaderFile=SampleParserDlg.h
+ImplementationFile=SampleParserDlg.cpp
+Filter=D
+BaseClass=CDialog
+VirtualFilter=dWC
+LastObject=CSampleParserDlg
+
+
+[DLG:IDD_SAMPLEPARSER_DIALOG]
+Type=1
+ControlCount=3
+Control1=IDOK,button,1342242817
+Control2=IDCANCEL,button,1342242816
+Control3=IDC_STATIC,static,1342308352
+Class=CSampleParserDlg
+
+[DLG:IDD_SAMPLEPARSER_DIALOG (English (U.S.))]
+Type=1
+Class=?
+ControlCount=1
+Control1=IDC_BUTTON1,button,1342242816
+

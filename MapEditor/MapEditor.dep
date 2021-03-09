@@ -1,0 +1,82 @@
+# Microsoft Developer Studio Generated Dependency File, included by MapEditor.mak
+
+.\CDIB.CPP : \
+	".\CDIB.H"\
+	
+
+.\CellData.cpp : \
+	".\CellData.h"\
+	".\MapEditor.h"\
+	
+
+.\CutDlg.cpp : \
+	".\CutDlg.h"\
+	".\MapEditor.h"\
+	
+
+.\InformationDlg.cpp : \
+	".\CellData.h"\
+	".\InformationDlg.h"\
+	".\MapEditor.h"\
+	".\Position.h"\
+	
+
+.\MainFrm.cpp : \
+	".\MainFrm.h"\
+	".\MapEditor.h"\
+	
+
+.\MapEditor.cpp : \
+	".\CDIB.H"\
+	".\CellData.h"\
+	".\CutDlg.h"\
+	".\InformationDlg.h"\
+	".\MainFrm.h"\
+	".\MapEditor.h"\
+	".\MapEditorDoc.h"\
+	".\MapEditorView.h"\
+	".\Position.h"\
+	
+
+.\MapEditor.rc : \
+	".\res\bitmap1.bmp"\
+	".\res\bitmap2.bmp"\
+	".\res\bmp00001.bmp"\
+	".\res\bmp00002.bmp"\
+	".\res\bmp00003.bmp"\
+	".\res\bmp00004.bmp"\
+	".\res\ico00001.ico"\
+	".\res\icon1.ico"\
+	".\res\icon2.ico"\
+	".\res\MapEditor.rc2"\
+	".\res\MapEditorDoc.ico"\
+	".\res\mark_.bmp"\
+	".\res\mark_pin.bmp"\
+	".\res\Toolbar.bmp"\
+	
+
+.\MapEditorDoc.cpp : \
+	".\MapEditor.h"\
+	".\MapEditorDoc.h"\
+	
+
+.\MapEditorView.cpp : \
+	".\CDIB.H"\
+	".\CellData.h"\
+	".\CutDlg.h"\
+	".\InformationDlg.h"\
+	".\MapEditor.h"\
+	".\MapEditorDoc.h"\
+	".\MapEditorView.h"\
+	".\Position.h"\
+	
+
+.\Position.cpp : \
+	".\MapEditor.h"\
+	".\Position.h"\
+	
+
+.\StdAfx.cpp : \
+	"..\..\..\..\mssdk\include\basetsd.h"\
+	".\StdAfx.h"\
+	

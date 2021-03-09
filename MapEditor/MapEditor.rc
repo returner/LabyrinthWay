@@ -1,0 +1,555 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MapEditor.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.kor\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\icon2.ico"
+IDR_MAPEDITYPE          ICON    DISCARDABLE     "res\\MapEditorDoc.ico"
+IDI_LOGO_ICON           ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_VERTEX_2            ICON    DISCARDABLE     "res\\ico00001.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_MARK_RED            BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_MARK_DIRX           BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_MARK_HEIGHT         BITMAP  DISCARDABLE     "res\\mark_.bmp"
+IDB_MARK_SLOPE          BITMAP  DISCARDABLE     "res\\mark_pin.bmp"
+IDB_MARK_GROUND         BITMAP  DISCARDABLE     "res\\bmp00002.bmp"
+IDB_MARK_DIRY           BITMAP  DISCARDABLE     "res\\bitmap2.bmp"
+IDB_MARK_END            BITMAP  DISCARDABLE     "res\\bmp00003.bmp"
+IDB_MARK_NOTUSED        BITMAP  DISCARDABLE     "res\\bmp00004.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE_AS
+    SEPARATOR
+    BUTTON      IDM_CUT
+    SEPARATOR
+    BUTTON      ID_INVALIDATE
+    SEPARATOR
+    BUTTON      IDM_VIEW_HEIGHT
+    BUTTON      IDM_VIEW_SLOPE
+    BUTTON      IDM_VIEW_GROUND
+    BUTTON      IDM_VIEW_DIRX
+    BUTTON      IDM_VIEW_DIRY
+    SEPARATOR
+    BUTTON      IDM_IMAGE_LEFT
+    BUTTON      IDM_IMAGE_RIGHT
+    BUTTON      IDM_IMAGE_UP
+    BUTTON      IDM_IMAGE_DOWN
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "새 파일(&N)\tCtrl+N",         ID_FILE_NEW
+        MENUITEM "열기(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "저장(&S)\tCtrl+S",            ID_FILE_SAVE_AS
+        MENUITEM "다른 이름으로 저장(&A)...",   ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "인쇄(&P)...\tCtrl+P",         ID_FILE_PRINT
+        MENUITEM "인쇄 미리 보기(&V)",          ID_FILE_PRINT_PREVIEW
+        MENUITEM "인쇄 설정(&R)...",            ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "최근 파일",                   ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "종료(&X)",                    ID_APP_EXIT
+    END
+    POPUP "짜르기"
+    BEGIN
+        MENUITEM "몇개?",                       IDM_CUT
+        MENUITEM "리푸레시",                    ID_INVALIDATE
+    END
+    POPUP "편집(&E)"
+    BEGIN
+        MENUITEM "취소(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "잘라내기(&T)\tCtrl+X",        ID_EDIT_CUT
+        MENUITEM "복사(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "붙여넣기(&P)\tCtrl+V",        ID_EDIT_PASTE
+    END
+    POPUP "보기(&V)"
+    BEGIN
+        MENUITEM "도구 모음(&T)",               ID_VIEW_TOOLBAR
+        MENUITEM "상태 표시줄(&S)",             ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        POPUP "속성보기"
+        BEGIN
+            MENUITEM "높이",                        IDM_VIEW_HEIGHT
+            MENUITEM "기울기",                      IDM_VIEW_SLOPE
+            MENUITEM "속성",                        IDM_VIEW_GROUND
+            MENUITEM "X 방향",                      IDM_VIEW_DIRX
+            MENUITEM "Y 방향",                      IDM_VIEW_DIRY
+        END
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "MapEditor 정보(&A)...",       ID_APP_ABOUT
+        MENUITEM "도움말(&H)",                  ID_HELP
+    END
+    POPUP "방향"
+    BEGIN
+        MENUITEM "왼쪽",                        IDM_IMAGE_LEFT
+        MENUITEM "오른쪽",                      IDM_IMAGE_RIGHT
+        MENUITEM "위쪽",                        IDM_IMAGE_UP
+        MENUITEM "아래쪽",                      IDM_IMAGE_DOWN
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 57
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MapEditor 정보"
+FONT 9, "굴림"
+BEGIN
+    ICON            IDI_VERTEX_2,IDC_STATIC,11,17,20,20
+    LTEXT           "MapEditor 0.99 alpha Version",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Developed by Benedict Amadeus 2001",IDC_STATIC,40,25,
+                    124,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,14,WS_GROUP
+    CONTROL         "Copyright by Mobile Excitement VERTEX DIGITAL",
+                    IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,64,37,
+                    165,12,WS_EX_DLGMODALFRAME
+END
+
+IDD_MAPEDITOR_FORM DIALOG DISCARDABLE  0, 0, 477, 422
+STYLE WS_CHILD
+FONT 9, "굴림"
+BEGIN
+END
+
+IDD_INFORMATION DIALOG DISCARDABLE  0, 0, 82, 265
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "각종 정보들"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT_HX,18,101,19,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_HY,54,101,19,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_AX,18,125,19,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_AY,54,125,19,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_BX,18,148,19,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_BY,54,148,19,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "입력",IDC_BUTTON_POSITION,22,164,38,11,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_ATT_HEIGHT,41,192,26,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT_ATT_SLOPE,41,206,26,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT_ATT_ATT,41,220,26,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT_ATT_DIR_X,41,234,26,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDIT_ATT_DIR_Y,41,248,26,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "입력",IDC_BUTTON_INPUT,22,239,38,11,WS_DISABLED
+    LTEXT           "NULL",IDC_ORIGIN_X,42,36,19,8
+    LTEXT           "NULL",IDC_ORIGIN_Y,42,46,19,8
+    LTEXT           "NULL",IDC_END_X,42,60,19,8
+    LTEXT           "NULL",IDC_END_Y,42,70,19,8
+    LTEXT           "시작 X :",IDC_STATIC,11,36,28,8
+    LTEXT           "시작 Y :",IDC_STATIC,11,46,28,8
+    LTEXT           "끝 X :",IDC_STATIC,19,60,20,8
+    LTEXT           "끝 Y :",IDC_STATIC,19,70,20,8
+    GROUPBOX        "좌표",IDC_STATIC,5,5,72,75
+    LTEXT           "마우스 현재 위치",IDC_STATIC,9,15,61,8
+    LTEXT           "X :",IDC_STATIC,11,26,10,8
+    LTEXT           "NULL",IDC_POINT_X,21,26,19,8
+    LTEXT           "Y :",IDC_STATIC,43,26,10,8
+    LTEXT           "NULL",IDC_POINT_Y,54,26,19,8
+    GROUPBOX        "속성입력",IDC_STATIC,5,181,72,75
+    LTEXT           "지형 :",IDC_STATIC,16,193,21,8
+    LTEXT           "판정 :",IDC_STATIC,16,208,21,8
+    LTEXT           "시간 :",IDC_STATIC,16,222,21,8
+    LTEXT           "방향 X :",IDC_STATIC,10,236,28,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "방향 Y :",IDC_STATIC,9,250,28,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    GROUPBOX        "좌표입력",IDC_STATIC,5,81,72,98
+    LTEXT           "홀 위치",IDC_STATIC,12,92,27,8
+    LTEXT           "공 A 위치",IDC_STATIC,12,116,33,8
+    LTEXT           "공 B 위치",IDC_STATIC,12,139,34,8
+    LTEXT           "X :",IDC_STATIC,8,103,10,8
+    LTEXT           "Y :",IDC_STATIC,43,103,10,8
+    LTEXT           "X :",IDC_STATIC,8,127,10,8
+    LTEXT           "Y :",IDC_STATIC,43,127,10,8
+    LTEXT           "X :",IDC_STATIC,8,150,10,8
+    LTEXT           "Y :",IDC_STATIC,43,150,10,8
+    CONTROL         144,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE,10,95,
+                    62,82
+END
+
+IDD_CUT DIALOG DISCARDABLE  0, 0, 105, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "그림 짜르기"
+FONT 9, "돋움"
+BEGIN
+    EDITTEXT        IDC_EDIT_CUT_X,28,31,17,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CUT_Y,28,44,17,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RED,74,13,22,12,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_EDIT_GREEN,74,28,22,12,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_EDIT_BLUE,74,43,22,12,ES_AUTOHSCROLL | WS_GROUP
+    PUSHBUTTON      "확인",IDOK,11,68,36,14
+    PUSHBUTTON      "취소",IDC_CANCEL,56,68,36,14
+    LTEXT           "단위 - pixel",IDC_STATIC,7,17,38,8
+    LTEXT           "X 축 : ",IDC_STATIC,7,33,20,8
+    LTEXT           "Y 축 : ",IDC_STATIC,7,46,20,8
+    GROUPBOX        "짜를 단위",IDC_STATIC,4,4,44,60
+    GROUPBOX        "라인 색상",IDC_STATIC,50,4,50,60,WS_GROUP
+    LTEXT           "빨강 :",IDC_STATIC,54,16,19,8
+    LTEXT           "초록 :",IDC_STATIC,54,30,19,8
+    LTEXT           "파랑 :",IDC_STATIC,54,46,19,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MapEditor MFC 응용 프로그램\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MapEditor\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MapEditor.EXE\0"
+            VALUE "ProductName", "MapEditor 응용 프로그램\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 50
+    END
+
+    IDD_MAPEDITOR_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 472
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 417
+    END
+
+    IDD_INFORMATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 77
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 260
+    END
+
+    IDD_CUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 101
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "MapEditor\n\nMapEdi\n\n\nMapEditor.Document\nMapEdi Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "MapEditor"
+    AFX_IDS_IDLEMESSAGE     "준비"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "새 문서를 작성합니다\n새 파일"
+    ID_FILE_OPEN            "기존 문서를 엽니다\n열기"
+    ID_FILE_CLOSE           "현재 열린 문서를 닫습니다\n닫기"
+    ID_FILE_SAVE            "현재 열린 문서를 저장합니다\n저장"
+    ID_FILE_SAVE_AS         "현재 열린 문서를 다른 이름으로 저장합니다\n다른 이름으로 저장"
+    ID_FILE_PAGE_SETUP      "인쇄 옵션을 변경합니다\n쪽 설정"
+    ID_FILE_PRINT_SETUP     "프린터와 인쇄 옵션을 변경합니다\n인쇄 설정"
+    ID_FILE_PRINT           "현재 열린 문서를 인쇄합니다\n인쇄"
+    ID_FILE_PRINT_PREVIEW   "쪽 전체를 표시합니다\n인쇄 미리 보기"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "무엇에 쓰는 물건인가..."
+    ID_APP_EXIT             "응용 프로그램을 종료하기 위해 문서를 저장할 것인지 묻습니다\n종료"
+    ID_HELP                 "뭐가 궁금해?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE2       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE3       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE4       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE5       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE6       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE7       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE8       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE9       "이 문서를 엽니다"
+    ID_FILE_MRU_FILE10      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE11      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE12      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE13      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE14      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE15      "이 문서를 엽니다"
+    ID_FILE_MRU_FILE16      "이 문서를 엽니다"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "다음 창으로 전환합니다\n다음 창"
+    ID_PREV_PANE            "이전 창으로 전환합니다\n이전 창"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "현재 열린 창을 나눕니다\n나누기"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "선택 부분을 지웁니다\n지우기"
+    ID_EDIT_CLEAR_ALL       "모든 것을 지웁니다\n모두 지우기"
+    ID_EDIT_COPY            "선택 부분을 복사하여 클립보드에 넣습니다\n복사"
+    ID_EDIT_CUT             "선택 부분을 잘라내어 클립보드에 넣습니다\n잘라내기"
+    ID_EDIT_FIND            "지정한 문자열을 찾습니다\n찾기"
+    ID_EDIT_PASTE           "클립보드의 내용을 붙여 넣습니다\n붙여넣기"
+    ID_EDIT_REPEAT          "마지막으로 실행한 동작을 반복합니다\n반복"
+    ID_EDIT_REPLACE         "지정한 문자열을 다른 문자열로 바꿉니다\n바꾸기"
+    ID_EDIT_SELECT_ALL      "문서 전체를 선택합니다\n전체 선택"
+    ID_EDIT_UNDO            "마지막으로 한 동작을 취소합니다\n실행 취소"
+    ID_EDIT_REDO            "이전에 취소한 동작을 다시 수행합니다\n다시 실행"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "도구 모음을 보이거나 감춥니다\n도구 모음 전환"
+    ID_VIEW_STATUS_BAR      "상태 표시줄을 표시하거나 감춥니다\n상태 표시줄 전환"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "창의 크기를 변경합니다"
+    AFX_IDS_SCMOVE          "창의 위치를 변경합니다"
+    AFX_IDS_SCMINIMIZE      "창을 아이콘으로 줄여서 표시합니다"
+    AFX_IDS_SCMAXIMIZE      "창을 최대 크기로 확장합니다"
+    AFX_IDS_SCNEXTWINDOW    "다음 문서 창으로 전환합니다"
+    AFX_IDS_SCPREVWINDOW    "이전 문서 창으로 전환합니다"
+    AFX_IDS_SCCLOSE         "현재 열린 창을 닫고 문서를 저장할 것인지를 묻습니다"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "창을 원래 크기로 복원합니다"
+    AFX_IDS_SCTASKLIST      "작업 목록을 활성화합니다"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "인쇄 미리 보기 모드를 닫습니다\n미리 보기 취소"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_CUT                 "짤러"
+    ID_INVALIDATE           "화면 쫘아아아아악"
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\MapEditor.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#include "l.kor\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

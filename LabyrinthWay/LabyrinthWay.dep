@@ -1,0 +1,39 @@
+# Microsoft Developer Studio Generated Dependency File, included by LabyrinthWay.mak
+
+.\LabyrinthWay.cpp : \
+	".\LabyrinthWay.h"\
+	".\LabyrinthWayDoc.h"\
+	".\LabyrinthWayView.h"\
+	".\MainFrm.h"\
+	".\StdAfx.h"\
+	
+
+.\LabyrinthWay.rc : \
+	".\res\LabyrinthWay.ico"\
+	".\res\LabyrinthWay.rc2"\
+	".\res\LabyrinthWayDoc.ico"\
+	".\res\Toolbar.bmp"\
+	
+
+.\LabyrinthWayDoc.cpp : \
+	".\LabyrinthWay.h"\
+	".\LabyrinthWayDoc.h"\
+	".\StdAfx.h"\
+	
+
+.\LabyrinthWayView.cpp : \
+	".\LabyrinthWay.h"\
+	".\LabyrinthWayDoc.h"\
+	".\LabyrinthWayView.h"\
+	".\StdAfx.h"\
+	
+
+.\MainFrm.cpp : \
+	".\LabyrinthWay.h"\
+	".\MainFrm.h"\
+	".\StdAfx.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	
